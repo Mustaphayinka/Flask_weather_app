@@ -1,0 +1,30 @@
+{%extends 'base.html' %}
+
+{% block content %}
+
+<div style="background-color: #c2bdd8;">
+        <h1 class="text-center text-info pt-5">Flask Weather API Web Application</h1>
+        <p class="text-secondary text-center font-italic"><p class="text-secondary text-center font-italic">Access Current Weather Data For Any Location on Earth By Inputing The State and Country</p></p>
+    <div style="height:100vh">
+        <div class="container h-100">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-12 col-xs-12 pt-5">
+                    <div class= "card border-6 p-3 shadow-lg">
+                        <h3 class="text-muted text-center pb-4">Current Weather In {{city}}</h3>
+                        <h5 class="lead text-muted text-center">Description: {{weather_desc}}</h5>
+                        <h5 class="lead text-muted text-center">Temperature: {{temp}}f</h5>
+                        <h5 class="lead text-muted text-center">Min-Temperature: {{temp_min}}f</h5>
+                        <h5 class="lead text-muted text-center">Max-Temperature: {{temp_max}}f</h5>
+                        <h5 class="lead text-muted text-center">Humidity: {{humidity}}%</h5>
+                        <h5 class="lead text-muted text-center">Wind Speed: {{wind_speed}}mph</h5>
+                    </div>
+                    
+                        <a href="/" class="btn btn-info btn-block">HOME</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
